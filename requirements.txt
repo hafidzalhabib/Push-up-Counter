@@ -3,6 +3,4 @@ python-time
 opencv-python-headless
 cvzone==1.5.4
 numpy
-protobuf<3.20,>=3.9.2
-opencv-contrib-python-headless
-mediapipe
+
