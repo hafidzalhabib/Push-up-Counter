@@ -1,0 +1,5 @@
+streamlit
+python-time
+opencv-python-headless
+cvzone==1.5.4
+numpy
