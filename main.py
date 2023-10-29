@@ -20,7 +20,7 @@ st.markdown("<h1 style='text-align: center;'>Push-Up Counter</h1>", unsafe_allow
 frame_placeholder = st.empty()
 stop_button_pressed = st.button("Stop")
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 detector = PoseDetector()
 ptime = 0
 ctime = 0
