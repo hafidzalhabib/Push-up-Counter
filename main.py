@@ -5,6 +5,7 @@ import cv2
 from cvzone.PoseModule import PoseDetector
 import queue
 import numpy as np
+from turn import get_ice_servers
 
 
 st.set_page_config(
@@ -60,7 +61,8 @@ with st.container():
             mode=WebRtcMode.SENDRECV,
             video_frame_callback=video_frame_callback,
             rtc_configuration={
-                "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
+                "iceServers": get_ice_servers(),
+                "iceTransportPolicy": "relay",
             },
             media_stream_constraints={"video": True, "audio": False}
         )
