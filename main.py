@@ -59,6 +59,9 @@ with st.container():
             key="coba",
             mode=WebRtcMode.SENDRECV,
             video_frame_callback=video_frame_callback,
+            rtc_configuration={
+                "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
+            },
             media_stream_constraints={"video": True, "audio": False}
         )
     with col2:
