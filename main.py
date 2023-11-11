@@ -61,7 +61,8 @@ with st.container():
             mode=WebRtcMode.SENDRECV,
             video_frame_callback=video_frame_callback,
             rtc_configuration={
-                "iceServers": get_ice_servers()
+                "iceServers": get_ice_servers(),
+                "iceTransportPolicy": "relay",
             },
             media_stream_constraints={"video": True, "audio": False}
         )
