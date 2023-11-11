@@ -1,6 +1,7 @@
 streamlit
-python-time
+streamlit-webrtc
+av
 opencv-python-headless
 cvzone==1.5.4
+queuelib
 numpy
-mediapipe
