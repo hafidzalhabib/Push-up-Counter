@@ -6,3 +6,4 @@ cvzone==1.5.4
 queuelib
 numpy
 mediapipe
+twilio~=8.10.1
