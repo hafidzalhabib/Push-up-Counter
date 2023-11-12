@@ -34,6 +34,6 @@ def get_ice_servers():
         st.warning(
             f"Error occurred while accessing Twilio API. Fallback to a free STUN server from Google. ({e})"  # noqa: E501
         )
-        return [{"urls": ["stun:stun.l.google.com:19302"]}]
+        return [{"urls": ["stun:stun1.l.google.com:19302"]}]
 
     return token.ice_servers
